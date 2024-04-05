@@ -31,12 +31,46 @@
 body {
   font-family: "Barlow Semi Condensed";
   font-size: 13px;
+  background: var(--light-grayish-blue);
+  padding: 1rem;
 }
 
 main {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: 2;
+  margin: auto;
 }
 
-span {
+article:nth-child(1){
+  background-color: var(--moderate-violet);
+}
+article:nth-child(2){
+  background-color: var(--very-dark-grayish-blue);
+}
+article:nth-child(3), article:nth-child(5){
+  background-color: var(--white);
+}
+article:nth-child(4){
+  background-color: var(--very-dark-blackish-blue);
+}
+article {
+  color: var(--white);
+}
+article:nth-child(odd):not(:first-child) {
+  color: var(--very-dark-blackish-blue);
+}
+
+.profile-info p {
   font-weight: 600;
+}
+.profile-verified {
+  opacity: 50%;
+}
+.profile-review-head{
+  font-weight: 600;
+}
+.profile-review {
+  opacity: 70%;
+  font-weight: 500;
 }
