@@ -32,7 +32,7 @@ body {
   font-family: "Barlow Semi Condensed";
   font-size: 13px;
   background: var(--light-grayish-blue);
-  padding: 4.5rem 1.5rem;
+  padding: 4.45rem 1.5rem 1rem;
   min-height: 100dvh;
   min-height: 100vh;
   display: flex;
@@ -44,13 +44,16 @@ body {
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-  gap: 1em;
+  gap: 2em;
   margin: auto;
   height: 100%;
 }
 
 article:nth-child(1) {
   background-color: var(--moderate-violet);
+  background-image: url(../assets/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 0%;
 }
 article:nth-child(2) {
   background-color: var(--very-dark-grayish-blue);
@@ -70,7 +73,7 @@ article {
   border-radius: 0.5rem;
   padding: 1.5rem 2rem;
   display: grid;
-  gap: .5rem;
+  gap: 1.5em;
 }
 article:nth-child(odd):not(:first-child) {
   color: var(--very-dark-blackish-blue);
@@ -96,11 +99,15 @@ article:nth-child(odd):not(:first-child) {
 }
 .profile-review-head {
   font-weight: 600;
-  text-wrap: wrap;
+  font-size: clamp(1.52em,1.3vw,2.5em);
+  padding-right: .2em;
 }
 .profile-review {
+  text-wrap: balance;
   opacity: 70%;
   font-weight: 500;
+  font-size: clamp(1em,1.1vw,2em);
+  line-height: 1.5;
 }
 
 @media (min-width: 1024px) {
