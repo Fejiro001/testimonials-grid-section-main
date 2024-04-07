@@ -98,7 +98,7 @@ article:nth-child(odd):not(:first-child) {
   display: block;
 }
 .profile-verified {
-  opacity: 50%;
+  opacity: 70%;
 }
 .profile-review-head {
   font-weight: 600;
